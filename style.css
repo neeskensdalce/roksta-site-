@@ -1,0 +1,142 @@
+body {
+  margin: 0;
+  font-family:'poppins', sans-serif;
+  background: #10ff10;
+  color: rgb(86, 113, 235);
+}
+
+/* HEADER */
+.header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: black;
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 20px;
+  z-index: 1000;
+}
+
+.logo {
+  font-weight: bold;
+}
+
+.nav a {
+  color: rgb(7, 179, 202);
+  margin-left: 15px;
+  text-decoration: hotpink;
+}
+
+/* HERO */
+.hero {margin-top: 60px;
+  height: 100vh;
+  background: url("images/logo.png") no-repeat center;
+  background-size: 600px; /* limite gwosè logo */
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+  margin-top: 60px;
+  height: 100vh;
+  background: url("images/logo.png") no-repeat center;
+  background-size: contain;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.overlay {  background: rgba(0, 0, 0, 0.7); /* fè fon nwa */
+  padding: 30px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.overlay h1 {
+  font-size: 32px;
+  margin: 1.4;
+}
+
+.overlay p {
+  margin: 10px 0;
+  color: #0f0547;
+}
+
+  text-align: center;
+}
+
+.overlay h1 {
+  font-size: 40px;
+}
+
+.overlay p {
+  color: #080808ce;
+}
+
+button {
+  padding: 10px 20px;
+  border: none;
+  background: white;
+  cursor: pointer;
+}
+
+/* PRODUCTS */
+.products {
+  padding: 60px 20px;
+  background: rgb(8, 18, 109);
+  color: black;
+}
+
+.products h2 {
+  margin-bottom: 20px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.card {
+  background: #f5f5f5;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.card img {
+  width: 100%;
+}
+
+.card h3 {
+  margin: 10px;
+}
+
+.card p {
+  margin: 0 10px 10px;
+  font-weight: bold;
+}
+
+.card button {
+  margin: 10px;
+  width: calc(100% - 20px);
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  transition: 0.3s;
+}
+
+/* CONTACT */
+.contact {
+  padding: 40px;
+  text-align: center;
+  background: black;
+}
+
+/* MOBILE */
+@media (max-width: 600px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}
